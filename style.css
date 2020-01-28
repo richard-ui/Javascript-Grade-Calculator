@@ -1,0 +1,49 @@
+.interface{
+	margin:auto;
+	width: 800px;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: #ffbf00;
+	border-style: solid;
+	margin-bottom: 15px;
+	
+}
+label, button{
+	display: inline-block;
+	width:90px;
+
+}
+#calcdegreediv{
+	text-align: center;
+}
+#grade{
+	width: 180px;
+}
+#module1label, #module2label, #module3label, #module4label, #module5label, #finalYM{
+	width:120px;
+}
+#secYmodule1label, #secYmodule2label, #secYmodule3label, #secYmodule4label, #secYmodule5label, #secYmodule6label{
+	width:120px;
+}
+#secYmarklbl{
+	width:130px;
+}
+#calcdegreeMark{
+	width:130px;
+}
+.interface div + div{
+	margin-top: 1em;
+}
+
+
+#MarkLbl, #secYMarkLbl{
+	margin-left: 30px;
+}
+#calcCredits, #secYcalcCredits{
+	margin-left: 272px;
+}
+
+header{
+	text-align: center;
+	text-decoration: underline;
+}
