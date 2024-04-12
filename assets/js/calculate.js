@@ -1,197 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Assignment</title>
-<meta http-equip="Content-Type" content="text/html; charset=ytf-8"/>
-     <link rel="stylesheet" type="text/css" href="style.css" /> 
-</head>
-<body onload="myFunction()">
+    var first = 0.25
+    var second = 0.75
 
-<label>Select your Programme Course</label>
-
-<!-- Operator -->
-<div>
-<label for="operatorprog">Programme:</label>
-<select id="operatorprog">
-  <option value="--">--</option>
-  <option id="webdev" >Web Dev</option>
-  <option id="compscience" >Computer Science</option>
-  <option id="compnetworks" >Computer Networks</option>
-  <option id="softengineering" >Software Engineering</option>
-</select>
-
-</div>
-
-<!-- InterFace -->
-<div class="interface">
-<header>Second Year Mark</header>
-</br>
-<!-- Operator -->
-
-<!-- Second Year Module 1 -->
-<div>
-<label id="secYmodule1label" for="secYm1">Module 1:</label>
-<input type="number" id="secYm1">
-
-<label for="secYcredit1">Credits 1</label>
-<input type="number" id="secYcredit1" value="20">
-
-
-<label id="secYmarklbl" for="secYmark">Second Year Mark:</label>
-<input type="number" id="secYmark">
-<div id="lblsecondYMark"></div>
-</div>
-  
-
-<!-- Second Year Module 2 -->
-<div>
-<label id="secYmodule2label" for="secYm2">Module 2:</label>
-<input type="number" id="secYm2">
-
-<label for="secYcredit2">Credits 2</label>
-<input type="number" id="secYcredit2" value="20">
-
-</div>
-
-<!-- Second Year Module 3 -->
-<div>
-<label id="secYmodule3label" for="secYm3">Module 3:</label>
-<input type="number" id="secYm3">
-
-<label for="secYcredit3">Credits 3</label>
-<input type="number" id="secYcredit3" value="20">
-
-</div>
-
-<!-- Second Year Module 4 -->
-<div>
-<label id="secYmodule4label" for="secYm4">Module 4:</label>
-<input type="number" id="secYm4">
-
-<label for="secYcredit4">Credits 4</label>
-<input type="number" id="secYcredit4" value="20">
-
-</div>
-
-<!-- Second Year Module 5 -->
-<div>
-<label id="secYmodule5label" for="secYm5">Module 5:</label>
-<input type="number" id="secYm5">
-
-<label for="secYcredit5">Credits 5</label>
-<input type="number" id="secYcredit5" value="20">
-
-</div>
-
-<!-- Second Year Module 6 -->
-<div>
-<label id="secYmodule6label" for="secYm6">Module 6:</label>
-<input type="number" id="secYm6">
-
-<label for="secYcredit6">Credits 6</label>
-<input type="number" id="secYcredit6" value="20">
-
-</div>
-
-<!-- Second Year Calculate button -->
-<div class="secYcalcDiv">
-
-<button id="secYcalcCredits">Credits</button>
-<input type="number" id="secYcreditResult">
-
-
-</div>
-
-</div>
-
-<!-- InterFace -->
-<div class="interface">
-<header>Final Year Mark</header>
-
-</br>
-<!-- Module 1 -->
-<div>
-<label id="module1label" for="m1">Module 1:</label>
-<input type="number" id="m1">
-
-<label for="credit1">Credits 1</label>
-<input type="number" id="credit1" value="20">
-
-
-<label id="finalYM" for="finalyearmark">Final Year Mark:</label>
-<input type="number" id="finalyearmark">
-<div id="lblfinalYMark"></div>
-</div>
-  
-
-<!-- Module 2 -->
-<div>
-<label id="module2label" for="m2">Module 2:</label>
-<input type="number" id="m2">
-
-<label for="credit2">Credits 2</label>
-<input type="number" id="credit2" value="20">
-
-</div>
-
-<!-- Module 3 -->
-<div>
-<label id="module3label" for="m3">Module 3:</label>
-<input type="number" id="m3">
-
-<label for="credit3">Credits 3</label>
-<input type="number" id="credit3" value="20">
-
-</div>
-
-<!-- Module 4 -->
-<div>
-<label id="module4label" for="m4">Module 4:</label>
-<input type="number" id="m4">
-
-<label for="credit4">Credits 4</label>
-<input type="number" id="credit4" value="20">
-
-</div>
-
-<!-- Module 5 -->
-<div>
-<label id="module5label" for="m5">Module 5:</label>
-<input type="number" id="m5">
-
-<label for="credit5">Credits 5</label>
-<input type="number" id="credit5" value="40">
-
-</div>
-
-<!-- Calculate button -->
-<div class="calcDiv">
-
-<button id="calcCredits">Credits</button>
-<input type="number" id="creditResult">
-
-
-</div>
-
-</div>
-
-<!-- Final Degree Mark -->
-<div class="interface">
-
-<div id="calcdegreediv">
-<button id="calcdegreeMark">Final Year Mark</button>
-<input type="number" id="degreeResult">
-<label id="grade">
-<div id="overall">Overall:</div>
-</div>
-
-</div>
-  
-<script language="Javascript" type="text/Javascript">
-   
-   var first = 0.25
-   var second = 0.75
-
+    function getIndex() {
+        document.getElementById("demo").innerHTML = document.getElementById("mySelect").value;
+    }
 
    // Second Year Credits
    
@@ -345,7 +157,8 @@
    
    // Modules
    
-   function getwebdev(){
+   function getWebDev(){
+    document.getElementById("demo").innerHTML = "kxjvhjfdvdfjnfd";
    
    var Project = document.getElementById("module1label").textContent = "Project";
    var AdvancedWebDevelopment = document.getElementById("module2label").textContent = "Advanced Web Development";
@@ -361,7 +174,7 @@
    var secYuXEngineering = document.getElementById("secYmodule6label").textContent = "UX Engineering";
    
    }
-   function getcompscience(){
+   function getComputerScience(){
    
    var ComputerGraphics = document.getElementById("module1label").textContent = "Software Project with Agile Techniques";
    var SoftwareManagement = document.getElementById("module2label").textContent = "AI and Data Mining";
@@ -377,7 +190,7 @@
     var secYClientServerSystems2 = document.getElementById("secYmodule6label").textContent = "Client Server Systems";	
    
    }
-   function getcompnetworks(){
+   function getComputerNetworks(){
    
    var AdvanceRoutingandSwitching = document.getElementById("module1label").textContent = "Advance Routing & Switching";
    var WANandGlobalNetworks = document.getElementById("module2label").textContent = "WAN & Global Networks";
@@ -394,7 +207,7 @@
 
    
    }
-   function getsoftengineering(){
+   function getSoftwareEngineering(){
    
    var SoftwareEngineering = document.getElementById("module1label").textContent = "Software Engineering";
    var SoftwareQualityManagement = document.getElementById("module2label").textContent = "Software Quality Management";
@@ -424,18 +237,25 @@
    document.getElementById('calcCredits').addEventListener('click', getCredits, false);
    
    
-   // Final year Programmes 'Click event handlers'
+   // Function that gets Degree Modules.
    
-   document.getElementById('webdev').addEventListener('click', getwebdev, false);
-   document.getElementById('compscience').addEventListener('click', getcompscience, false);
-   document.getElementById('compnetworks').addEventListener('click', getcompnetworks, false);
-   document.getElementById('softengineering').addEventListener('click', getsoftengineering, false);
-
-   
-</script>
-
-
-
-
-</body>
-</html>
+   function selectDegree() {
+        let degree = document.getElementById("degreeDropdown").value;
+        switch(degree) {
+          case "Web Development":
+            result = getWebDev();
+            break;
+          case "Computer Science":
+            result = getComputerScience();
+            break;
+          case "Computer Networks":
+            result = getComputerNetworks();
+            break;
+          case "Software Engineering":
+            result = getSoftwareEngineering();
+            break;
+          default:
+            result = "NONE";
+        }
+        return result;
+   }
