@@ -19,11 +19,12 @@ label, button{
 #grade{
 	width: 180px;
 }
-#module1label, #module2label, #module3label, #module4label, #module5label, #finalYM{
-	width:120px;
+.modulelabel, #finalYM, #secYmarklbl{
+	width:110px;
+	margin-left: 20px;
 }
-#secYmodule1label, #secYmodule2label, #secYmodule3label, #secYmodule4label, #secYmodule5label, #secYmodule6label{
-	width:120px;
+.creditlabel{
+	margin-left: 20px;
 }
 #secYmarklbl{
 	width:130px;
@@ -36,7 +37,7 @@ label, button{
 }
 
 
-#MarkLbl, #secYMarkLbl{
+#secYMarkLbl{
 	margin-left: 30px;
 }
 #calcCredits, #secYcalcCredits{
