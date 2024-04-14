@@ -3,26 +3,12 @@
 <head>
     <meta http-equip="Content-Type" content="text/html; charset=ytf-8"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="assets/js/calculate.js"></script>
     <title>Grade Calculator Assignment</title>
 </head>
 
 <body>
 
-    <!-- Select your favorite fruit:
-    <select id="mySelect">
-        <option>Apple</option>
-        <option>Orange</option>
-        <option>Pineapple</option>
-        <option>Banana</option>
-    </select>
-        <br><br> -->
-
-    <label>Select your Programme Course</label>
-
-    <p id="demo">JavaScript can change HTML content.</p>
-
-    <!-- <input type="button" onclick="getIndex()" value="Click Test!"> -->
+    <h2>Select your Programme Course</h2>
 
     <!-- Degree Dropdown -->
 
@@ -30,147 +16,128 @@
         <label for="degreeDropdown">Programme:</label>
         <select id="degreeDropdown" onchange="selectDegree()">
             <option value="--">--</option>
-            <option value="Web Development" id="webdev" >Web Dev</option>
-            <option value="Computer Science" id="compscience" >Computer Science</option>
-            <option value="Computer Networks" id="compnetworks" >Computer Networks</option>
-            <option value="Software Engineering" id="softengineering" >Software Engineering</option>
+            <option value="Web Development">Web Dev</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Computer Networks">Computer Networks</option>
+            <option value="Software Engineering">Software Engineering</option>
         </select>
 
     </div>
+    <br/>
 
-    <!-- InterFace -->
     <div class="interface">
-    <header>Second Year Mark</header>
-    </br>
-    <!-- Operator -->
+    <h4>Second Year Mark</h4>
 
     <!-- Second Year Module 1 -->
     <div>
         <label id="secYmodule1label" for="secYm1">Module 1:</label>
-        <input type="number" id="secYm1">
+        <input type="number" id="secYm1" class="secondYModule" placeholder="Module 1 Mark...">
 
         <label for="secYcredit1">Credits 1</label>
-        <input type="number" id="secYcredit1" value="20">
+        <input type="number" id="secYcredit1" value="20" class="secYcredit">
 
-        <label id="secYmarklbl" for="secYmark">Second Year Mark:</label>
-        <input type="number" id="secYmark">
-        <div id="lblsecondYMark"></div>
+        <label id="secYmarklbl" for="lblsecondYMark">Second Year Mark:</label>
+        <span id="lblsecondYMark"></span>
     </div>
     
 
     <!-- Second Year Module 2 -->
     <div>
         <label id="secYmodule2label" for="secYm2">Module 2:</label>
-        <input type="number" id="secYm2">
+        <input type="number" id="secYm2" class="secondYModule" placeholder="Module 2 Mark...">
 
         <label for="secYcredit2">Credits 2</label>
-        <input type="number" id="secYcredit2" value="20">
+        <input type="number" id="secYcredit2" value="20" class="secYcredit">
     </div>
 
     <!-- Second Year Module 3 -->
     <div>
         <label id="secYmodule3label" for="secYm3">Module 3:</label>
-        <input type="number" id="secYm3">
+        <input type="number" id="secYm3" class="secondYModule" placeholder="Module 3 Mark...">
 
         <label for="secYcredit3">Credits 3</label>
-        <input type="number" id="secYcredit3" value="20">
+        <input type="number" id="secYcredit3" value="20" class="secYcredit">
     </div>
 
     <!-- Second Year Module 4 -->
     <div>
         <label id="secYmodule4label" for="secYm4">Module 4:</label>
-        <input type="number" id="secYm4">
+        <input type="number" id="secYm4" class="secondYModule" placeholder="Module 4 Mark...">
 
         <label for="secYcredit4">Credits 4</label>
-        <input type="number" id="secYcredit4" value="20">
+        <input type="number" id="secYcredit4" value="20" class="secYcredit">
     </div>
 
     <!-- Second Year Module 5 -->
     <div>
         <label id="secYmodule5label" for="secYm5">Module 5:</label>
-        <input type="number" id="secYm5">
+        <input type="number" id="secYm5" class="secondYModule" placeholder="Module 5 Mark...">
 
         <label for="secYcredit5">Credits 5</label>
-        <input type="number" id="secYcredit5" value="20">
+        <input type="number" id="secYcredit5" value="20" class="secYcredit">
     </div>
 
     <!-- Second Year Module 6 -->
     <div>
         <label id="secYmodule6label" for="secYm6">Module 6:</label>
-        <input type="number" id="secYm6">
+        <input type="number" id="secYm6" class="secondYModule" placeholder="Module 6 Mark...">
 
         <label for="secYcredit6">Credits 6</label>
-        <input type="number" id="secYcredit6" value="20">
-    </div>
-
-    <!-- Second Year Calculate button -->
-    <div class="secYcalcDiv">
-        <button id="secYcalcCredits">Credits</button>
-        <input type="number" id="secYcreditResult">
+        <input type="number" id="secYcredit6" value="20" class="secYcredit">
     </div>
 
     </div>
 
-    <!-- InterFace -->
     <div class="interface">
-    <header>Final Year Mark</header>
-
-    </br>
+    <h4>Final Year Mark</h4>
     <!-- Module 1 -->
     <div>
         <label id="module1label" for="m1">Module 1:</label>
-        <input type="number" id="m1">
+        <input type="number" id="m1" class="finalYModule" placeholder="Module 1 Mark...">
 
         <label for="credit1">Credits 1</label>
-        <input type="number" id="credit1" value="20">
+        <input type="number" id="credit1" value="20" class="finalYcredit">
 
 
         <label id="finalYM" for="finalyearmark">Final Year Mark:</label>
-        <input type="number" id="finalyearmark">
-        <div id="lblfinalYMark"></div>
+        <span id="lblfinalYMark"></span>
     </div>
     
 
     <!-- Module 2 -->
     <div>
         <label id="module2label" for="m2">Module 2:</label>
-        <input type="number" id="m2">
+        <input type="number" id="m2" class="finalYModule" placeholder="Module 2 Mark...">
 
         <label for="credit2">Credits 2</label>
-        <input type="number" id="credit2" value="20">
+        <input type="number" id="credit2" value="20" class="finalYcredit">
     </div>
 
     <!-- Module 3 -->
     <div>
         <label id="module3label" for="m3">Module 3:</label>
-        <input type="number" id="m3">
+        <input type="number" id="m3" class="finalYModule" placeholder="Module 3 Mark...">
 
         <label for="credit3">Credits 3</label>
-        <input type="number" id="credit3" value="20">
+        <input type="number" id="credit3" value="20" class="finalYcredit">
     </div>
 
     <!-- Module 4 -->
     <div>
         <label id="module4label" for="m4">Module 4:</label>
-        <input type="number" id="m4">
+        <input type="number" id="m4" class="finalYModule" placeholder="Module 4 Mark...">
 
         <label for="credit4">Credits 4</label>
-        <input type="number" id="credit4" value="20">
+        <input type="number" id="credit4" value="20" class="finalYcredit">
     </div>
 
     <!-- Module 5 -->
     <div>
         <label id="module5label" for="m5">Module 5:</label>
-        <input type="number" id="m5">
+        <input type="number" id="m5" class="finalYModule" placeholder="Module 5 Mark...">
 
         <label for="credit5">Credits 5</label>
-        <input type="number" id="credit5" value="40">
-    </div>
-
-    <!-- Calculate button -->
-    <div class="calcDiv">
-        <button id="calcCredits">Credits</button>
-        <input type="number" id="creditResult">
+        <input type="number" id="credit5" value="40" class="finalYcredit">
     </div>
 
     </div>
@@ -187,7 +154,6 @@
 
     </div>
     
-    <script language="Javascript" type="text/Javascript"></script>
-
     </body>
+    <script src="assets/js/calculate.js" language="Javascript" type="text/Javascript"></script>
 </html>
