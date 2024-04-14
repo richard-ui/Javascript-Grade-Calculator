@@ -1,5 +1,7 @@
 ## Welcome to the JavaScript Grade Calculator Project
 
+- Link to site https://richard-ui.github.io/Javascript-Grade-Calculator/
+
 - This will calculate a students Final Grade for their Degree.
 
 - It will allow them to enter their marks into each Module input boxes. Credits will also be taken in to account and a calculation will be made.
